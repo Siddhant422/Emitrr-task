@@ -6,19 +6,25 @@ import (
 	"net/http"
 	"sort"
 	"strconv"
+	"os"
 
 	"github.com/go-redis/redis/v8"
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
+	"github.com/joho/godotenv"
 )
 
 var rdb *redis.Client
 
 func init() {
 
+	_ = godotenv.Load()
+	redisUrl := os.Getenv("REDIS_URL")
+	redisPass := os.Getenv("REDIS_PASS")
+
 	rdb = redis.NewClient(&redis.Options{
-		Addr:     "localhost:6379",
-		Password: "",
+		Addr:     redisUrl,
+		Password: redisPass,
 		DB:       0,
 	})
 }
