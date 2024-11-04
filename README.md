@@ -1,4 +1,4 @@
-# Exploding Kittens Card Game 😼
+# Exploding Kittens Card Game 🃏
 
 
 ![ReactJS](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white)
@@ -9,22 +9,7 @@
 
 
 
-Welcome to the Exploding Kittens card game! This is an online single-player card game where you try to draw cards from a deck without exploding kittens blowing up in your face. Let's dive into how the game works and how you can access it locally.
-
-## Screenshots
-
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-    <img src="Screenshots/welcomePage.png" alt="welcomePage" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game1.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game2.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game3.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game4.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game5.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game6.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/leaderboard.png" alt="Leaderboard" style="height: 130px; padding: 10px;">
-  </div>
-
-
+Welcome to the Exploding Kittens card game! This online, single-player game challenges you to draw cards from a deck while avoiding the exploding kittens that could make you lose. Let’s take a look at how the game functions and how you can play it on your local setup.
 
 ## Working
 
@@ -37,8 +22,8 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
 ## How the Game Works
 
 ### Rules:
-- **Types of Cards:**
-  - 😼 **Cat Card**: Harmless card, just a cute cat.
+- **Types of Cards in the game:**
+  - 😺 **Cat Card**: Harmless card, just a cute cat.
   - 🙅‍♂️ **Defuse Card**: Used to defuse an exploding kitten.
   - 🔀 **Shuffle Card**: Shuffles the deck and resets the game.
   - 💣 **Exploding Kitten Card**: Instant game over if drawn.
@@ -53,57 +38,65 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
 
 
 - **Gameplay:**
-  - Clicking on the deck reveals a card.
-  - If it's a cat card, it's removed from the deck.
-  - If it's an exploding kitten card and you don't have a defuse card, you lose.
-  - If it's a defuse card, it's removed from the deck and can be used to defuse an exploding kitten later.
-  - If it's a shuffle card, the game restarts with a freshly shuffled deck.
-  - Win the game by drawing all non-exploding kitten cards.
+  - Clicking on the deck will reveal a card.
+  - If the card is a cat card, it is taken out of the deck.
+  - If you draw an exploding kitten and don’t have a defuse card, you lose the game.
+  - If you draw a defuse card, it’s removed from the deck and can be used later to neutralize an exploding kitten.
+  - If you draw a shuffle card, the deck is reshuffled, and the game restarts.
+  - To win, you need to draw all the non-exploding kitten cards.
 
 ## Accessing the Game Locally
 
 ### File Directory of the Game
+
 ```
-   |--exploding-kitten-frontend
-   |   |-- node_modules/
-   |   |-- public/
-   |   |   |-- index.html
-   |   |   |-- favicon.ico
-   |   |   |-- manifest.json
-   |   |-- src/
-   |   |   |-- components/
-   |   |   |   |-- CardBlock.js
-   |   |   |   |-- LeaderBoard.js
-   |   |   |   |--NameForm.js
-   |   |   |   |-- Navbar.js
-   |   |   |   |-- Toast.js
-   |   |   |-- assets/
-   |   |   |   |-- cat1.png
-   |   |   |   |-- cat2.png
-   |   |   |   |-- cat3.png
-   |   |   |   |-- cat4.png
-   |   |   |-- App.js
-   |   |   |-- App.css
-   |   |   |-- index.js
-   |   |   |-- index.css
-   |   |-- package.json
-   |   |-- package-lock.json
-   |   |-- README.md
-   |--exploding-kitten-backend
-   |   |--go.mod
-   |   |--go.sum
-   |   |--main.go
+   |-- exploding-kitten-game
+|   |-- exploding-kittens-backend/
+|   |   |-- go.env
+|   |   |-- go.mod
+|   |   |-- go.sum
+|   |   |-- main.go
+|-- exploding-kittens-frontend/
+|   |-- node_modules/
+|   |-- public/
+|   |   |-- index.html
+|   |   |-- favicon.ico
+|   |   |-- manifest.json
+|   |-- src/
+|   |   |-- components/
+|   |   |   |-- CardBlock.js
+|   |   |   |-- LeaderBoard.js
+|   |   |   |-- NameForm.js
+|   |   |   |-- Navbar.js
+|   |   |   |-- Toast.js
+|   |   |-- assets/
+|   |   |   |-- cat1.png
+|   |   |   |-- cat2.png
+|   |   |   |-- cat3.png
+|   |   |   |-- cat4.png
+|   |   |-- App.js
+|   |   |-- App.css
+|   |   |-- App.test.js
+|   |   |-- index.js
+|   |   |-- index.css
+|   |   |-- logo.svg
+|   |   |-- reportWebVitals.js
+|   |   |-- setupTests.js
+|   |-- package.json
+|   |-- package-lock.json
+|   |-- .gitignore
+|   |-- README.md
 ```
 
 ### For Node.js (React Frontend):
 1. Install dependencies: `npm install`
 2. Start the frontend server: `npm start`
-3. Access the game at: `http://localhost:3000`
+3. Access the game at: `http://localhost:8000`
 
 ### For Go Lang (Backend):
 1. Install dependencies: `go mod tidy`
 2. Build the Go server: `go build -o main`
-3. Start the server: `./main`
+3. Start the server: `./main.`
 
 Sure, here are the steps to set up Redis for your project along with some example code snippets:
 
