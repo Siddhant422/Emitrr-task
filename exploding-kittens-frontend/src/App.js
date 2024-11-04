@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     const fetchUserPoints = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/api/user/points?name=${userName}`);
+        const response = await fetch(`https://emitrr-task-lxun.onrender.comapi/user/points?name=${userName}`);
         console.log('Fetching user points for:', userName);
         
         if (!response.ok) {
@@ -112,7 +112,7 @@ function App() {
   useEffect(() => {
     const updateUserPoints = async () => {
       try {
-        await fetch('http://localhost:8080/api/user/points', {
+        await fetch('https://emitrr-task-lxun.onrender.com/api/user/points', {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -132,7 +132,7 @@ function App() {
   useEffect(() => {
     const updateUserPoints = async () => {
       try {
-        await fetch('http://localhost:8080/api/user/points', {
+        await fetch('https://emitrr-task-lxun.onrender.com/api/user/points', {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -141,7 +141,7 @@ function App() {
         });
   
         
-        const response = await fetch(`http://localhost:8080/api/user/points?name=${userName}`);
+        const response = await fetch(`https://emitrr-task-lxun.onrender.com/api/user/points?name=${userName}`);
         const data = await response.json();
         setUpdatedPoints(data);
       } catch (error) {
