@@ -133,9 +133,10 @@ That's it! You've successfully set up Redis for your project and connected to it
 - Redis
 
 ## ScreenShots:
-![image](https://github.com/user-attachments/assets/d6a0e47b-1943-4880-81c9-b29f3b84ba8f)
+
 ![image](https://github.com/user-attachments/assets/e9a107a8-0b25-4bc9-a0e7-a2ab46d8ff01)
 ![image](https://github.com/user-attachments/assets/dc264241-f9d4-4eff-bc29-ee1ae78e9dd8)
+![image](https://github.com/user-attachments/assets/d6a0e47b-1943-4880-81c9-b29f3b84ba8f)
 
 
 
