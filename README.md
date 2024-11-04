@@ -19,7 +19,7 @@ Welcome to the Exploding Kittens card game! This online, single-player game chal
   </video>
 
 
-## How the Game Works
+## Working of the game:
 
 ### Rules:
 - **Types of Cards in the game:**
@@ -44,8 +44,6 @@ Welcome to the Exploding Kittens card game! This online, single-player game chal
   - If you draw a defuse card, it’s removed from the deck and can be used later to neutralize an exploding kitten.
   - If you draw a shuffle card, the deck is reshuffled, and the game restarts.
   - To win, you need to draw all the non-exploding kitten cards.
-
-## Accessing the Game Locally
 
 ### File Directory of the Game
 
