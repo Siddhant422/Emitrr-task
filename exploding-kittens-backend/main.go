@@ -19,8 +19,8 @@ var rdb *redis.Client
 func init() {
 
 	_ = godotenv.Load()
-	redisUrl := os.Getenv("REDIS_URL")
-	redisPass := os.Getenv("REDIS_PASS")
+	redisUrl := os.Getenv("ADDR")
+	redisPass := os.Getenv("PASS")
 
 	rdb = redis.NewClient(&redis.Options{
 		Addr:     redisUrl,
