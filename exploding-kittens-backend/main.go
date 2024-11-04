@@ -25,12 +25,6 @@ func init() {
 		Password: os.Getenv("DB_PASS"),
 		DB:       0,
 	})
-	err = Rdb.Ping(context.Background()).Err()
-	if err != nil {
-        log.Fatalf("Could not connect to Redis: %v", err)
-    } else {
-        log.Println("Connected to Redis successfully!!")
-    }
 }
 
 type UserData struct {
