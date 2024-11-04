@@ -18,15 +18,19 @@ var rdb *redis.Client
 
 func init() {
 
-	_ = godotenv.Load()
-	redisUrl := os.Getenv("ADDR")
-	redisPass := os.Getenv("PASS")
+	err:= godotenv.Load()
 
 	rdb = redis.NewClient(&redis.Options{
-		Addr:     redisUrl,
-		Password: redisPass,
+		Addr:os.Getenv("DB_USER")  ,
+		Password: os.Getenv("DB_PASS"),
 		DB:       0,
 	})
+	err = Rdb.Ping(context.Background()).Err()
+	if err != nil {
+        log.Fatalf("Could not connect to Redis: %v", err)
+    } else {
+        log.Println("Connected to Redis successfully!!")
+    }
 }
 
 type UserData struct {
