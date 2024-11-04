@@ -20,7 +20,7 @@ function NameForm({ onNameSubmit }) {
 
   return (
 
-    <form onSubmit={handleSubmit} style={{ textAlign: 'center' }}>
+    <form onSubmit={handleSubmit} style={{ textAlign: 'center', padding: '50px', backgroundColor: '#BA8E23', borderRadius: '15px' }}>
       <div className="nameformTitle">
         <h1>Exploding Kittens 😸</h1>
       </div>
@@ -30,7 +30,7 @@ function NameForm({ onNameSubmit }) {
         onChange={(e) => setName(e.target.value)}
         placeholder="Enter Your Name"
         style={{
-          backgroundColor: 'transparent',
+          backgroundColor: 'white',
           border: '1px solid #1a4d9e',
           color: 'black',
           padding: '8px',
