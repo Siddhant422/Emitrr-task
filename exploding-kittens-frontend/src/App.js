@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     const fetchUserPoints = async () => {
       try {
-        const response = await fetch(`https://emitrr-task-lxun.onrender.comapi/user/points?name=${userName}`);
+        const response = await fetch(`https://emitrr-task-lxun.onrender.com/api/user/points?name=${userName}`);
         console.log('Fetching user points for:', userName);
         
         if (!response.ok) {
