@@ -12,15 +12,6 @@
 Welcome to the Exploding Kittens card game! This online, single-player game challenges you to draw cards from a deck while avoiding the exploding kittens that could make you lose. Let’s take a look at how the game functions and how you can play it on your local setup.
 
 ## Working
-
-  <video controls height="130">
-  <source src="Screenshots/gameFilm.mp4" type="video/quicktime">
-    Sorry! Your browser does not support the video tag.
-  </video>
-
-
-## Working of the game:
-
 ### Rules:
 - **Types of Cards in the game:**
   - 😺 **Cat Card**: Harmless card, just a cute cat.
@@ -131,6 +122,14 @@ That's it! You've successfully set up Redis for your project and connected to it
 - Redux
 - GoLang
 - Redis
+
+## ScreenShots:
+
+![image](https://github.com/user-attachments/assets/e9a107a8-0b25-4bc9-a0e7-a2ab46d8ff01)
+![image](https://github.com/user-attachments/assets/dc264241-f9d4-4eff-bc29-ee1ae78e9dd8)
+![image](https://github.com/user-attachments/assets/d6a0e47b-1943-4880-81c9-b29f3b84ba8f)
+
+
 
 
 ## Contributions and License
