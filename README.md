@@ -12,15 +12,6 @@
 Welcome to the Exploding Kittens card game! This online, single-player game challenges you to draw cards from a deck while avoiding the exploding kittens that could make you lose. Let’s take a look at how the game functions and how you can play it on your local setup.
 
 ## Working
-
-  <video controls height="130">
-  <source src="Screenshots/gameFilm.mp4" type="video/quicktime">
-    Sorry! Your browser does not support the video tag.
-  </video>
-
-
-## Working of the game:
-
 ### Rules:
 - **Types of Cards in the game:**
   - 😺 **Cat Card**: Harmless card, just a cute cat.
