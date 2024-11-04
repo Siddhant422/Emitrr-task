@@ -9,7 +9,7 @@ function NameForm({ onNameSubmit }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/api/user', { name });
+      await axios.post('https://emitrr-task-lxun.onrender.com/api/user', { name });
       onNameSubmit(name); 
       setErrorMessage('');
     } catch (error) {
