@@ -18,7 +18,7 @@ var rdb *redis.Client
 
 func init() {
 
-	err:= godotenv.Load()
+	_ := godotenv.Load()
 
 	rdb = redis.NewClient(&redis.Options{
 		Addr:os.Getenv("DB_USER")  ,
