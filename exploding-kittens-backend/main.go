@@ -18,11 +18,13 @@ var rdb *redis.Client
 
 func init() {
 
-	_ := godotenv.Load()
+	_ = godotenv.Load()
+	redisUrl := os.Getenv("DB_USER")
+	redisPass := os.Getenv("DB_PASS")
 
 	rdb = redis.NewClient(&redis.Options{
-		Addr:os.Getenv("DB_USER")  ,
-		Password: os.Getenv("DB_PASS"),
+		Addr:     redisUrl,
+		Password: redisPass,
 		DB:       0,
 	})
 }
