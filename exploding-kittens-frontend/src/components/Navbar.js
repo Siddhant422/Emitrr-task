@@ -6,11 +6,11 @@ function Navbar({ userName, points }) {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <h1>Exploding Kittens 😸</h1>
+        <h1>Exploding Kittens 🃏</h1>
       </div>
       <div className="navbar-right">
-        <p>User: {userName}</p>
-        <p>Points: {points}</p>
+        <p>Player: {userName}</p>
+        <p>Score: {points}</p>
       </div>
     </nav>
   );

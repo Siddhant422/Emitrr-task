@@ -54,7 +54,7 @@ function NameForm({ onNameSubmit }) {
           fontWeight: 'bolder'
         }}
       >
-        Game on
+        Start Game
       </button>
       {errorMessage && <p style={{ color: '#10B881' }}>{errorMessage}</p>}
     </form>
