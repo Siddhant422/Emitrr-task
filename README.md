@@ -1,14 +1,5 @@
 # Exploding Kittens Card Game 🃏
 
-
-![ReactJS](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white)
-![Redux](https://img.shields.io/badge/-Redux-764ABC?logo=redux&logoColor=white)
-![GoLang](https://img.shields.io/badge/-GoLang-00ADD8?logo=go&logoColor=white)
-![Redis](https://img.shields.io/badge/-Redis-DC382D?logo=redis&logoColor=white)
-![Gorilla Mux](https://img.shields.io/badge/-Gorilla%20Mux-00ADD8?logo=go&logoColor=white)
-
-
-
 Welcome to the Exploding Kittens card game! This online, single-player game challenges you to draw cards from a deck while avoiding the exploding kittens that could make you lose. Let’s take a look at how the game functions and how you can play it on your local setup.
 
 ## Working
@@ -35,47 +26,6 @@ Welcome to the Exploding Kittens card game! This online, single-player game chal
   - If you draw a defuse card, it’s removed from the deck and can be used later to neutralize an exploding kitten.
   - If you draw a shuffle card, the deck is reshuffled, and the game restarts.
   - To win, you need to draw all the non-exploding kitten cards.
-
-### File Directory of the Game
-
-```
-   |-- exploding-kitten-game
-|   |-- exploding-kittens-backend/
-|   |   |-- go.env
-|   |   |-- go.mod
-|   |   |-- go.sum
-|   |   |-- main.go
-|-- exploding-kittens-frontend/
-|   |-- node_modules/
-|   |-- public/
-|   |   |-- index.html
-|   |   |-- favicon.ico
-|   |   |-- manifest.json
-|   |-- src/
-|   |   |-- components/
-|   |   |   |-- CardBlock.js
-|   |   |   |-- LeaderBoard.js
-|   |   |   |-- NameForm.js
-|   |   |   |-- Navbar.js
-|   |   |   |-- Toast.js
-|   |   |-- assets/
-|   |   |   |-- cat1.png
-|   |   |   |-- cat2.png
-|   |   |   |-- cat3.png
-|   |   |   |-- cat4.png
-|   |   |-- App.js
-|   |   |-- App.css
-|   |   |-- App.test.js
-|   |   |-- index.js
-|   |   |-- index.css
-|   |   |-- logo.svg
-|   |   |-- reportWebVitals.js
-|   |   |-- setupTests.js
-|   |-- package.json
-|   |-- package-lock.json
-|   |-- .gitignore
-|   |-- README.md
-```
 
 ### For Node.js (React Frontend):
 1. Install dependencies: `npm install`
